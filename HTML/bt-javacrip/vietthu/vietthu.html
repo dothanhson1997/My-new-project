@@ -7,6 +7,45 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="vietthu.js"></script>
+    <h1>Viết thư</h1>
+    
+        <label for="name"> Nhập tên:</label>
+        <input id="name" type="text"> <br/><br/>
+
+        <label for="adress"> Nhập địa chỉ: </label>
+        <input id="adress" type="text"><br/><br/>
+
+        <label for="date"> Nhập ngày</label>
+        <input id="date" type="date" name="" ><br/><br/>
+        
+        <button type="submit" onclick="get_info()">Tạo</button>
+    <div id="result" style="width:50%"></div>
 </body>
 </html>
+<script>
+    function get_info() {
+        let name = document.getElementById("name").value;
+        let adress = document.getElementById("adress").value;
+        let date = document.getElementById("date").value;
+
+        
+        let result = 
+       
+            "<b>"+ name + "</b>" + " thương mến," 
+            + "<br>" 
+            + "<br>"
+            + "Anh không biết phải nói sao để anh hiểu rằng, anh nhớ em thật nhiều. Anh yêu em đến khi trái tim này tan thành nghìn mảnh."
+            + "Tất cả những gì anh yêu thương, anh khát khao và cần đến, chính là em, mãi mãi về sau. Anh chỉ muốn ở bên em, và em yêu hỡi, anh sẽ trở thành người đàn ông như em mong muốn."
+
+            + "Có phải anh thật tệ hại, khi cứ nghĩ đến em thật nhiều, thật lâu và nhất là mỗi khi đêm xuống? anh hứa sẽ sẽ cố gắng triệu triệu lần hơn thế."
+            + "Nhưng hơn tất cả, anh chỉ mong một ngày nào đó, em sẽ tự hào về anh, như tự hào về chồng của am, và cha của các con em (ít nhất là 2 nhé, anh vừa mới quyết định đấy!)."
+            + "Anh nhớ thật nhiều cảm giác mỗi đêm anh ôm em và ru em ngủ trong vòng tay. Đêm nay, anh chỉ muốn được gần bên em… và em biết không, trái tim anh đang đau đớn đến nhường nào."
+
+            + "Em yêu thương, đừng bao giờ rời xa anh nữa nhé. Yêu em rất nhiều!"
+            + "<br>"
+            + "<br>"
+            + "<b>"+ adress + "</b>" +", "+ "<b>"+ date + "</b>" + ".";
+       
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
