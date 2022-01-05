@@ -24,12 +24,12 @@
         //         alert(0);
         //     }
         // }
-        switch (value)
+        switch ((value > 0) ? 1 : (value < 0) ? -1 : 0)
         {
-            case value > 0:
+            case 1:
                 alert(1);
                 break;
-            case value < 0:
+            case -1:
                 alert(-1);
                 break;
             default:
