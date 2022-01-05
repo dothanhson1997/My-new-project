@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Giá Hoa Quả</h2><br>
+        <input type="text" id="Name">
+        <button onclick="kt_gia()">Xem Giá</button>
+        <div id="Result"></div>
+    </form>
+    <script>
+        function kt_gia()
+        {
+            let name = document.getElementById("Name");
+            let Result = "";
+            switch(name)
+            {
+                case "Ổi":
+                    Result = document.write("20000 VNĐ/kg");
+                    break;
+                case "Dưa hấu":
+                    Result = document.write("20000 VNĐ/kg");
+                    break;
+                case "Táo":
+                    Result = document.write("30000 VNĐ/kg");
+                    break;
+                case "Xoài":
+                    Result = document.write("30000 VNĐ/kg");
+                    break;
+                case "Cam":
+                    Result = document.write("40000 VNĐ/kg");
+                    break;
+                case "Chôm Chôm":
+                    Result = document.write("40000 VNĐ/kg");
+                    break;
+                case "Măng cụt":
+                    Result = document.write("50000 VNĐ/kg");
+                    break;
+                document.getElementById("Result").innerHTML = Result;
+            }
+        }
+
+    </script>
+</body>
+</html>
