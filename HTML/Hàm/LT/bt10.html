@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = prompt("Nhập mảng VD: 1,2,3,4,5").split(",");
+        let number = prompt("Nhập số cần tìm");
+        checkNumber(arr, number);
+
+        function checkNumber(arr, number) {
+            let count = 0;
+            let flap = false;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] == number) {
+                    count++;
+                    flap = true;
+                }
+            }
+            if (flap) {
+                document.write("Số lần xuất hiện là " + count);
+            } else {
+                document.write("Số lần xuất hiện là -1 ");
+            }
+        }
+    </script>
+</body>
+
+</html>
