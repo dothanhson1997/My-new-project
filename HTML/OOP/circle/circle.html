@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function area(CD , CR){
+        //     let DT = CD * CR;
+        //     return DT; 
+        // }
+        // let CD = prompt("Mhập chiều dài");
+        // let CR = prompt("Nhập chiều rộng");
+        // document.write(area(CD , CR));
+
+        class Circle {
+            constructor(radius, color) {
+                this.radius = radius;
+                this.color = color;
+            }
+
+            getColor() {
+                return this.color;
+            }
+            getRadius() {
+                return this.radius;
+            }
+            getArea() {
+                return this.radius * this.radius * Math.PI;
+            }
+        }
+        let Circle1 = new Circle(5, "Red");
+        let Circle2 = new Circle(10, "blue");
+
+        // Circle1.getRadius(5);
+        // Circle2.getRadius(10);
+
+        // document.write(Circle1.getColor("Blue"));
+        // document.write(Circle2.getColor("Red"));
+
+        document.write(Circle1.getArea() + " Và " + Circle1.getRadius() + "<br>");
+        document.write(Circle2.getArea() + " Và " + Circle2.getRadius());
+    </script>
+</body>
+
+</html>
