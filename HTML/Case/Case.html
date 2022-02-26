@@ -27,43 +27,44 @@
         <h2>ĐĂNG KÍ SINH VIÊN</h2>
         <form>
             <tr>
-                <td>Họ và tên:</td>
+                <td>Họ và tên:<span style="color: rgb(250, 29, 29);">*</span></td>
                 <td><input type="text" id="name" /></td>
             </tr>
 
             <tr>
-                <td>Ngày tháng năm sinh:</td>
+                <td>Ngày-tháng-năm sinh:<span style="color: rgb(250, 29, 29);">*</span></td>
                 <td><input type="text" id="birthday"></td>
             </tr>
 
             <tr>
-                <td>Giới tính:</td>
+                <td>Giới tính:<span style="color: rgb(250, 29, 29);">*</span></td>
                 <td><input type="text" id="sex"></td>
             </tr>
 
             <tr>
-                <td>Địa chỉ:</td>
+                <td>Địa chỉ:<span style="color: rgb(250, 29, 29);">*</span></td>
                 <td><input type="text" id="address"></td>
             </tr>
 
             <tr>
-                <td>Email:</td>
+                <td>Email:<span style="color: rgb(250, 29, 29);">*</span></td>
                 <td><input type="text" id="email"></td>
             </tr>
 
             <tr>
-                <td>Điện thoại:</td>
+                <td>Điện thoại:<span style="color: rgb(250, 29, 29);">*</span></td>
                 <td><input type="text" id="phone"></td>
             </tr>
 
             <tr>
                 <td><input type="button" id="btnAdd" value="Lưu thông tin" onclick="Add();" /></td>
-                <td><input type="button" id="btnDisplay" value="Hiển thị thông tin cập nhật" onclick="Dp();" /></td>
+                <td><input type="button" id="btnDisplay" value="Hiển thị" onclick="Dp();" />
+                    <button type="reset">Nhập lại</button></td>
             </tr>
         </form>
     </table>
 
-    <h3>Thông tin của sinh viên đã đăng kí:</h3>
+    <h3>Thông tin của sinh viên đã đăng kí: <input type="button" id="btnFind" value="Tiềm kiếm" onclick="Find();" /></h3>
     <b><div id="result"></div></b>
     <h3>Xóa thông tin <button onclick="Del()">Delete</button></h3>
     <script src="Case.js"></script>
